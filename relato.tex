@@ -1,0 +1,180 @@
+%%%
+%%%  Arquivo fonte relato.tex - Vers{\~a}o 9.94
+%%%  Prof. Paulo S. Motta Pires /LECA/UFRN
+%%%              Pode set utilizado/modificado livremente.
+%%% para gerar PDF usar : 
+%%%
+%%%                  pdflatex relato.tex
+%%% 
+%%% As figuras podem ser geradas com o XFIG (exportar em eps)
+%%% Lembrar de transform{\'a}-las de eps para pdf usando 
+%%%                  eps2pdf figura.eps
+%%%
+\documentclass[a4paper,11pt]{article}
+\title{Sugest{\~o}es para a Prepara{\c c}{\~a}o de Relat{\'o}rios T{\'e}cnicos
+        \footnote{Vers{\~a}o 9.94}}
+\author{}
+\date{}
+\usepackage[latin1]{inputenc}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{ae}
+\usepackage[brazil]{babel}
+\usepackage{indentfirst}
+\usepackage{url}
+\makeindex
+%%%
+%%%
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\vspace{5cm}
+\begin{minipage}{\textwidth}
+\flushright
+{\large
+Nome do Aluno \\
+Disciplina, Per{\'\i}odo Letivo\\
+Nome do Professor da Disciplina\\}
+\vspace{7cm}
+\center
+{\large
+Laborat{\'o}rio de Engenharia de Computa{\c c}{\~a}o e Automa{\c c}{\~a}o\\
+Universidade Federal do Rio Grande do Norte\\
+Natal-RN, M{\^e}s e Ano da Publica{\c c}{\~a}o}
+\end{minipage} 
+\pagebreak 
+
+%%% FINAL DA CAPA
+
+\begin{abstract}
+Com o objetivo de padronizar a apresenta{\c c}{\~a}o de trabalhos, sugerimos este modelo para a confec{\c c}{\~a}o de Relat{\'o}rios T{\'e}cnicos. Os coment{\'a}rios, ao longo do texto, est{\~a}o escritos em {\it it{\'a}lico}.
+
+ A vers{\~a}o mais recente deste documento est{\'a} dispon{\'\i}vel, nos formatos {\tt ps} e {\tt pdf}, em \url{http://www.leca.ufrn.br/~pmotta}.Sugest{\~o}es podem ser encaminhadas para \url{pmotta@leca.ufrn.br}.
+\end{abstract}
+\pagebreak
+
+%%% FINAL DO RESUMO
+
+
+\tableofcontents
+\pagebreak
+
+%%% FINAL DO SUM{\'A}RIO
+
+\section{Introdu{\c c}{\~a}o}
+Neste t{\'o}pico descrever, de forma suscinta, o contexto no qual o trabalho a ser apresentado est{\'a} inserido. Em seguida, descrever, de forma resumida, as partes constituintes do trabalho.\\
+Considera{\c c}{\~o}es importantes :
+\begin{enumerate}
+\item {\it Utilizar, preferencialmente, um editor ou um  processador de texto} 
+\item {\it Utilizar apenas uma das faces do papel}
+\item {\it Utilizar folhas brancas}
+\end{enumerate}
+\pagebreak
+
+%%% FINAL DA INTRODU{\c C}{\~A}O
+
+\section{T{\'o}pico : T{\'\i}tulo do T{\'o}pico}
+Desenvolver o assunto relativo ao t{\'o}pico
+\begin{enumerate}
+\item {\it A bibliografia utilizada deve ser referenciada no texto atrav{\'e}s de numera{\c c}{\~a}o sequencial, em algarismos ar{\'a}bicos, colocados entre colchetes. Por exemplo : } ``\ldots como descrito em \cite{b1} \ldots'' ou ``\ldots de acordo com o circuito el{\'e}trico apresentado na Figura 1-06 de \cite{b2}' \ldots''
+\item {\it A lista das refer{\^e}ncias efetivamente consultadas, colocadas na se{\c c}{\~a}o} Refer{\^e}ncias, {\it deve seguir a ordem de chamada utilizada no texto.}
+\end{enumerate} 
+
+As equa{\c c}{\~o}es, centralizadas, devem ser referenciadas no texto atrav{\'e}s de numera{\c c}{\~a}o sequencial. Por exemplo, ``\ldots o sistema de equa{\c c}{\~o}es homog{\^e}neas representado pelas equa{\c c}{\~o}es anteriores, ter{\'a} solu{\c c}{\~a}o n{\~a}o-trivial se :\\
+\begin{equation} \left |
+\begin{array}{cccc}
+J_{\nu}(ua) & 0 & -K_{\nu}(wa) & 0 \\
+0 & J_{\nu}(ua) & 0 & -K_{\nu}(wa) \\
+\frac{i \nu \beta}{u^2 a}J_{\nu}(ua) & -\frac{\omega \nu}{u} J'_{\nu}(ua) & \frac{i \nu \beta}{w^2 a}K_{\mu}(wa) & -\frac{\omega \nu}{w} K'_{\nu}(wa) \\[6pt]
+\frac{\omega \epsilon_{1}}{u}J'_{\nu}(ua)& \frac{i \nu \beta}{u^2 a}J_{\nu}(ua) & \frac{\omega-\epsilon_{2}}{w}K'_{\nu}(wa) & \frac{i \nu \beta}{\omega^2 a}K_{\nu}(wa)
+\end{array}
+\right | = 0
+\end{equation}
+onde
+\begin{equation}
+f=\frac{J'_{\nu}(U)}{UJ_{\nu}(U)} \qquad\mbox{;}\qquad g=\frac{K'_{\nu}(W)}{WK_{\nu}(W)}
+\end{equation}
+sendo  $J_{\nu}(x)$ e $K_{\nu}(y)$ a fun{\c c}{\~a}o de Bessel e a fun{\c c}{\~a}o de Bessel modificada, respectivamente. Os argumentos dessas fun{\c c}{\~o}es s{\~a}o :
+\begin{eqnarray}
+U^2 &=& (ua)^2 = (k_{1}a)^2 - (\beta a)^2\\ 
+W^2 &=& (wa)^2 = (\beta a)^2 - (k_{2}a)^2 
+\end{eqnarray}
+com
+\begin{eqnarray}
+\epsilon &=& \frac{\epsilon_{1}}{\epsilon_{2}} = \frac{n_{1}^2}{n_{2}^2}\\
+ k_{i} &=& \omega^2 \mu \epsilon_{i} = k_{0}^2 n_{i} \qquad \mbox{;}\qquad  \mbox{i = 1,2}
+\end{eqnarray}
+e
+\begin{eqnarray}
+J'_{\nu}(U) &=& \frac{1}{2}[J_{\nu-1}(U) - J_{\nu+1}(U)]\\
+K'_{\nu}(W) &=& -\frac{1}{2}[K_{\nu-1}(W) + K_{\nu+1}(W)] 
+\end{eqnarray}
+
+A linha acima de cada fun{\c c}{\~a}o representa a derivada da fun{\c c}{\~a}o com rela{\c c}{\~a}o ao seu argumento.{\'E} importante ressaltar que $\epsilon_{1}$ e $\epsilon_{2}$ s{\~a}o, respectivamente, a permissividade el{\'e}trica do n{\'u}cleo e da casca da fibra enquanto $\beta$ {\'e} a constante de propaga{\c c}{\~a}o dos modos dentro da estrutura.''
+
+As Tabelas, tamb{\'e}m, devem ser referenciadas no texto atrav{\'e}s de numera{\c c}{\~a}o sequencial. Por exemplo, ``\ldots{}conforme dados apresentados na Tabela 1{}\ldots''
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|r|r|r|r|r|r|}
+    \hline
+        Time &    Jogos &       PG &       PP &       GP &       GC \\
+    \hline\hline
+    Cruzeiro &        3 &        9 &        0 &       17 &        0 \\
+        {\'I}bis &        3 &        3 &        6 &        8 &        9 \\
+    Flamengo &        3 &        0 &        9 &        0 &       16 \\
+    \hline
+  \end{tabular}
+  \caption{Classifica{\c c}{\~a}o ap{\'o}s tr{\^e}s rodadas}
+\end{table}
+
+As Figuras devem ser referenciadas no texto atrav{\'e}s de numera{\c c}{\~a}o sequencial. Por exemplo, ``\ldots{}aplica{\c c}{\~a}o cliente-servidor mostrada na Figura 1{}\ldots''
+\begin{figure}[H]
+        \centering
+        %\includegraphics[height=6.0cm]{figura1.pdf}
+        \caption{Aplica{\c c}{\~a}o Cliente-Servidor}
+\end{figure}
+\section{T{\'o}pico : T{\'\i}tulo do T{\'o}pico}
+Desenvolver o assunto relativo ao t{\'o}pico
+\section{Conclus{\~o}es}
+{\it Descrever, resumidamente, o trabalho realizado. Quando cab{\'\i}vel, citar poss{\'\i}veis extens{\~o}es}
+\pagebreak
+
+%%% AP{\^E}NDICE
+
+\appendix
+\section{Exemplo de um Ap{\^e}ndice}
+Desenvolvemos um programa de computador, na linguagem C, cuja listagem {\'e} apresentada na Figura 2.
+
+\begin{figure}[H]
+ \begin{verbatim}
+     1  #include <stdio.h>
+       
+     2  main(argc, argv, envp)
+     3  int     argc;
+     4  char    *argv[];
+     5  char    *envp[];        
+       
+     6  {
+     7          int i;
+     8          for (i = 0; envp[i] != (char *) 0; i++)
+     9                  printf("%s/n", envp[i]);
+    10          
+    11          exit(0);
+    12  }
+\end{verbatim} 
+\caption{Exemplo de um programa}
+\end{figure}
+\vspace{2.5cm}
+{\it Em geral, os Ap{\^e}ndices s{\~a}o utilizados para colocar listagens de programas de computador, exemplos mais completos de utiliza{\c c}{\~a}o de programas, apresenta{\c c}{\~a}o mais elaborada de algum t{\'o}pico abordado no corpo do programa (dedu{\c c}{\~a}o de alguma equa{\c c}{\~a}o, por exemplo), desenvolvimento de algum t{\'o}pico perif{\'e}rico objetivando complementar alguma informa{\c c}{\~a}o.}
+\pagebreak
+
+%%% BIBLIOGRAFIA
+
+\begin{thebibliography}{99}
+\bibitem{b1} T.~0etiker, The Not So Short Introduction to \LaTeXe{}, obtido em \url{ftp://ftp.dante.de/tex-archive/info/lshort}
+\bibitem{b2} F.~Monssen, PSpice with Circuit Analysis, Merril, pp.22, 1993
+\end{thebibliography}
+
+\end{document}
+
+
